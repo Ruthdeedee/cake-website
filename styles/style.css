@@ -303,18 +303,18 @@ section{
 }
 
 .products .box-container .box:hover .icons{
-    top: 0;
+    top: 0; 
 }
 
 .products .box-container .box .icons{
     position: absolute;
     top: -105%;
-    left: 0;
+    left: 43%;
     height: 30rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(243, 243, 243, 0.8);
+    background: rgba(243, 243, 243, 0.375);
     gap: 1rem;
 }
 
@@ -334,15 +334,19 @@ section{
 }
 
 .products .box-container .box .img{
-    height: 15rem;
-    width: 27rem;
+    width: auto;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
     }
 
     .products .box-container .box .img img{
         height: 15rem;
         width: 21rem;
         object-fit: cover;
+        display: flex;
+    justify-content: center;
     }
 
     .products .box-container .box .content{
