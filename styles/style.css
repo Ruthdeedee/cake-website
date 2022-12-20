@@ -472,8 +472,9 @@ section{
     color: white;
 }
 
-.info-container .info img{
+ .info img{
     height: 7rem;
+    width: 7rem;
     }
 
     .info-container .info .content h3{
