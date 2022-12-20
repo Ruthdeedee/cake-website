@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cake website</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo" style="color: white;"
+        ><i class="fas fa-shopping-basket"></i>DCS
+      </a> 
+
+      <nav class="navbar">
+        <a href="#">home</a>
+        <a href="#">shop</a>
+        <a href="#">about</a>
+        <a href="#">review</a>
+        <a href="#">blog</a>
+        <a href="#">contact us</a>
+      </nav>
+
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="slides-container">
+        <div class="slide active">
+          <div class="content">
+            <span>Have a Dee-Li-Cious Day</span>
+            <h3>upto 40% off</h3>
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+          <div class="img">
+            <img src="./images/chocstaw.jpeg" alt="" />
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="content">
+            <span>Have a Dee-Li-Cious Day</span>
+            <h3>upto 40% off</h3>
+            <a href="#" class="btn">shop now</a>
+          </div>
+          <div class="img">
+            <img src="./images/choco.jpeg" alt="" />
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="content">
+            <span>Have a Dee-Li-Cious Day</span>
+            <h3>upto 40% off</h3>
+            <a href="#" class="btn">shop now</a>
+          </div>
+          <div class="img">
+            <img src="./images/redberries.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
+      <div id="prev-slide" class="fas fa-angle-left" onclick="next()"></div>
+    </section>
+
+    <section class="banner-container">
+      <div class="banner">
+        <img src="./images/banner1.jpeg" alt="" />
+        <div class="content">
+          <span>Limited Sales</span>
+          <h3>upto 40% off</h3>
+          <a href="#" class="btn">shop now</a>
+        </div>
+      </div>
+
+      <div class="banner">
+        <img src="./images/banner2.jpeg" alt="" />
+        <div class="content">
+          <span>Limited Sales</span>
+          <h3>upto 40% off</h3>
+          <a href="#" class="btn">shop now</a>
+        </div>
+      </div>
+
+      <div class="banner">
+        <img src="./images/banner3.jpeg" alt="" />
+        <div class="content">
+          <span>Limited Sales</span>
+          <h3>upto 40% off</h3>
+          <a href="#" class="btn">shop now</a>
+        </div>
+      </div>
+    </section>
+
+    <!--category-->
+
+    <div class="heading">
+      <h1>our shop</h1>
+    </div>
+
+    <section class="category">
+      <h1 class="title">our <span>category</span> <a href="#">view all</a></h1>
+
+      <div class="box-container">
+        <a href="#" class="box">
+          <img src="./images/cupcakes.jpeg" alt="" />
+          <h3>Yummy Cupcakes</h3>
+        </a>
+
+        <a href="#" class="box">
+          <img src="./images/cookies.jpeg" alt="" />
+          <h3>cookies</h3>
+        </a>
+
+        <a href="#" class="box">
+          <img src="./images/brownbread.jpeg" alt="" />
+          <h3>Brown Bread</h3>
+        </a>
+
+        <a href="#" class="box">
+          <img src="./images/chocolates.jpeg" alt="" />
+          <h3>Chocolates</h3>
+        </a>
+
+        <a href="#" class="box">
+          <img src="./images/doughnuts.jpeg" alt="" />
+          <h3>Fresh Doughnuts</h3>
+        </a>
+      </div>
+    </section>
+
+    <section class="products">
+      <h1 class="title">our <span>products</span> <a href="#">view all</a></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="img">
+            <img src="./images/berrycitrus.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Berry Citrus Frosted Cake</h3>
+            <div class="price">$19.99</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="img">
+            <img src="./images/douice.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Doughnut and Ice-cream Cake</h3>
+            <div class="price">$21.99</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="img">
+            <img src="./images/rainbow.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Rainbow Cake</h3>
+            <div class="price">$10.99</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="img">
+            <img src="./images/sparklynu.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Sparkly Cake</h3>
+            <div class="price">$15.99</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="img">
+            <img src="./images/nutella.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Naughty Nutella Cake</h3>
+            <div class="price">$18.99</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="heading">
+      <h1>About Us</h1>
+    </div>
+    <section class="about">
+      <div class="img">
+        <img src="./images/heading2.jpeg" alt="" />
+      </div>
+
+      <div class="content">
+        <span>welcome to our products</span>
+        <h3>Deedee's Products</h3>
+        <p>
+          Welcome to our wonderful world of sweet treats, cakes like no other,
+          fresh doughnuts, cupcakes, freshly baked bread, irresistible cookies.
+        </p>
+        <p>Welcome to our wonderful world of sweet treats</p>
+        <a href="#" class="btn">read more</a>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <h1 class="title">our <span>gallery</span> <a href="#">view all</a></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="./images/gallery1.jpeg" alt="" />
+          <div class="icons">
+            <a href="#" class="fas fa-eye"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share-alt"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./images/gallery2.jpeg" alt="" />
+          <div class="icons">
+            <a href="#" class="fas fa-eye"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share-alt"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./images/gallery3.jpg" alt="" />
+          <div class="icons">
+            <a href="#" class="fas fa-eye"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share-alt"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./images/gallery4.jpeg" alt="" />
+          <div class="icons">
+            <a href="#" class="fas fa-eye"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share-alt"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./images/gallery5.jpeg" alt="" />
+          <div class="icons">
+            <a href="#" class="fas fa-eye"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share-alt"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./images/gallery6.jpeg" alt="" />
+          <div class="icons">
+            <a href="#" class="fas fa-eye"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share-alt"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="heading">
+      <h1>client's review</h1>
+    </div>
+
+    <section class="info-container">
+
+      <div class="info">
+        <img src="./images/icon1.jpeg" alt="" />
+        <h3>fast delivery</h3>
+        <span>within 25 minutes</span>
+      </div>
+    </section>
+
+    <div class="info">
+        <img src="./images/247.jpeg" alt="" />
+        <h3>24 / 7 available</h3>
+        <span>call us anytime</span>
+      </div>
+    </div>
+
+    <div class="info">
+        <img src="./images/payment.jpeg" alt="" />
+        <h3>easy payments</h3>
+        <span>payments on delivery or credit card</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="review">
+
+    <div class="box">
+      <div class="user">
+        <img src="./images/bey.jpeg" alt="">
+        <h3>Beyonce Carter</h3>
+        <span>happy client</span>
+</div>
+</div>
+<p>Fantastic Cakes, yummiest i ever had!!</p>
+</div>
+
+<div class="box">
+  <div class="user">
+    <img src="./images/smaller.jpeg" alt="">
+    <h3>Tyler Perry</h3>
+    <span>happy client</span>
+</div>
+</div>
+<p>They got the best cookies and doughnuts i ever tasted</p>
+</div>
+
+<div class="box">
+  <div class="user">
+    <img src="./images/review3.jpeg" alt="">
+    <h3>Oprah Winfrey</h3>
+    <span>happy client</span>
+</div>
+</div>
+<p>They are the best, i tell y'all</p>
+</div>
+</section>
+
+<div class="heading">
+  <h1>our blogs</h1>
+</div>
+
+<div class="blogs">
+  <h1 class="title"> our <span>blogs</span> <a href="#">view all</a></h1>
+<div class="box-container">
+
+  <div class="box">
+    <div class="img">
+      <img src="./images/blog1.jpeg" alt="">
+</div>
+<div class="content">
+<section class="icons">
+  <a href="#"> <i class="fas fa-calender"></i> 24 december 2022</a>
+  <a href="#"> <i class="fas fa-user"></i> by administrator</a>
+</div>
+<h3>blogs title page</h3>
+<p>We have been the best for over 12 years now but we are not prideful, always willing to learn..</p>
+<a href="#" class="btn">read more...</a>
+</div>
+</div>
+
+<div class="box">
+  <div class="img">
+    <img src="./images/blog2.jpeg" alt="">
+</div>
+<div class="content">
+<section class="icons">
+<a href="#"> <i class="fas fa-calender"></i> 24 december 2022</a>
+<a href="#"> <i class="fas fa-user"></i> by administrator</a>
+</div>
+<h3>blogs title page</h3>
+<p>We have been the best for over 12 years now but we are not prideful, always willing to learn..</p>
+<a href="#" class="btn">read more...</a>
+</div>
+</div>
+
+<div class="box">
+  <div class="img">
+    <img src="./images/blog3.jpeg" alt="">
+</div>
+<div class="content">
+<section class="icons">
+<a href="#"> <i class="fas fa-calender"></i> 24 december 2022</a>
+<a href="#"> <i class="fas fa-user"></i> by administrator</a>
+</div>
+<h3>blogs title page</h3>
+<p>We have been the best for over 12 years now but we are not prideful, always willing to learn..</p>
+<a href="#" class="btn">read more...</a>
+</div>
+</div>
+
+
+<div class="box">
+  <div class="img">
+    <img src="./images/blog4.jpeg" alt="">
+</div>
+<div class="content">
+<section class="icons">
+<a href="#"> <i class="fas fa-calender"></i> 24 december 2022</a>
+<a href="#"> <i class="fas fa-user"></i> by administrator</a>
+</div>
+<h3>blogs title page</h3>
+<p>We have been the best for over 12 years now but we are not prideful, always willing to learn..</p>
+<a href="#" class="btn">read more...</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="contact">
+  <div class="icons-container">
+
+    <div class="icons">
+<i class="fas fa-phone"></i>
+<h3>our number</h3>
+<p>123-456-7890</p>
+<p>777-888-9999</p>
+    </div>
+
+    <div class="icons">
+      <i class="fas fa-envelope"></i>
+      <h3>our email</h3>
+      <p>deesconfectionery@gmail.com</p>
+      <p>confectionery@gmail.com</p>
+          </div>
+
+          <div class="icons">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>our address</h3>
+            <p>dallas,texas 95146</p>
+            </div>
+
+  </div>
+
+  <div class="row">
+    <form action="">
+      <h3>get in touch</h3>
+      <div class="inputBox">
+      <input type="text" placeholder="enter your name" class="box">
+      <input type="text" placeholder="enter your email" class="box">
+    </div>
+
+    <div class="inputBox">
+      <input type="text" placeholder="enter your number" class="box">
+      <input type="text" placeholder="enter your subject" class="box">
+    </div>
+    <textarea placeholder="your message" cols="30" rows="10"></textarea>
+    <input type="submit" value="send message" class="btn">
+
+    </form>
+  <img src="./images/map2.jpeg" alt="map">
+  </div>
+</section>
+</section>
+
+<div class="space"></div>
+<!--footer section starts-->
+
+
+<section class="footer">
+  <div class="box-container">
+    <div class="box">
+      <h3>quick links</h3>
+      <a href="#"> <i class="fas fa-arrow-right"></i> Home</a>
+      <a href="#"> <i class="fas fa-arrow-right"></i>Shop</a>
+      <a href="#"> <i class="fas fa-arrow-right"></i>About</a>
+      <a href="#"> <i class="fas fa-arrow-right"></i>Review</a>
+      <a href="#"> <i class="fas fa-arrow-right"></i>Blog</a>
+      <a href="#"> <i class="fas fa-arrow-right"></i>Contact</a>
+
+    </div>
+
+    <div class="box">
+      <h3>extra links</h3>
+      <a href="#"> <i class="fas fa-arrow-right"></i> my order </a>
+      <a href="#"> <i class="fas fa-arrow-right"></i> my wishlist </a>
+      <a href="#"> <i class="fas fa-arrow-right"></i> my favorites </a>
+      <a href="#"> <i class="fas fa-arrow-right"></i> my account </a>
+      <a href="#"> <i class="fas fa-arrow-right"></i> use or terms </a>
+ </div>
+
+ <div class="box">
+  <h3>newsletter</h3>
+  <p>subscribe for latest updates</p>
+  <form action="">
+  <input type="email" placeholder="enter your email address">
+  <input type="submit" value="subscribe" class="btn">
+</form>
+  <img src="./images/paymentm.jpeg" class="payments" alt="">
+  
+</div>
+
+  </div>
+
+</section>
+
+
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
